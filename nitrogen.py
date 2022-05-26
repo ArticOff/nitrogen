@@ -100,13 +100,13 @@ async def main():
     else:
         boost = False
     print('')
+    scrape()
     while count > 0:
         if boost:
             code = gen_code(24)
         else:
             code = gen_code(16)
         if checker:
-            scrape()
             count -= 1
             badge = '#'
             async with aiohttp.ClientSession() as session:
