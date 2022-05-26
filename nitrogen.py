@@ -28,7 +28,7 @@ def readproxies():
         raise SystemExit
     rproxy = p.read().split('\n')
     for i in rproxy:
-        if i == '' or i == ' ':
+        if i == '' or ' ':
             index = rproxy.index(i)
             del rproxy[index]
     p.close()
