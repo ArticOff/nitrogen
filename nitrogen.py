@@ -86,17 +86,17 @@ async def main():
     boost = False
     os.system('cls')
     print('[ {0.YELLOW}>{0.STOP} ] {0.GREEN}{0.BOLD}DISCORD NITRO GENERATOR{0.STOP}'.format(color))
-    print('[ {0.YELLOW}>{0.STOP} ] {0.GRAY}by{0.STOP} Artic ({0.DARK_CYAN}{0.UNDERLINED}https://github.com/ArticOff{0.STOP})\n'.format(color))
+    print('[ {0.YELLOW}>{0.STOP} ] {0.GRAY}Made by{0.STOP} Artic ({0.DARK_CYAN}{0.UNDERLINED}https://github.com/ArticOff{0.STOP})\n'.format(color))
     try:
         count = int(ask('How much codes will be generated'))
     except ValueError:
         print('\n[ {0.RED}>{0.STOP} ] Please enter an integer !\n'.format(color))
         return exit()
-    if ask('Enable Checker (yes/no)') == 'yes':
+    if str(ask('Enable Checker (yes/no)')).lower() == 'yes':
         checker = True
     else:
         checker = False
-    if ask('Boost codes or Classic codes (boost/classic)') == 'boost':
+    if str(ask('Boost codes or Classic codes (boost/classic)')).lower() == 'boost':
         boost = True
     else:
         boost = False
