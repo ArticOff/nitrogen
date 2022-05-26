@@ -60,7 +60,7 @@ async def main():
         print('\n[ {0.BLUE}i{0.STOP} ] {1} {0.GRAY}scraped proxys.{0.STOP}'.format(color, scrape()))
     else:
         checker = False
-        valid =  invalid = 'CHECKER NOT ENABLED'
+        valid = invalid = 'CHECKER NOT ENABLED'
     print('')
     while count > 0:
         if boost:
