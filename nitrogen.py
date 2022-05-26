@@ -57,10 +57,11 @@ async def main():
     if str(ask('Enable Checker (yes/no)')).lower() == 'yes':
         checker = True
         valid = invalid = 0
+        print('\n[ {0.BLUE}i{0.STOP} ] {1} {0.GRAY}scraped proxys.{0.STOP}'.format(color, scrape()))
     else:
         checker = False
         valid =  invalid = 'CHECKER NOT ENABLED'
-    print('\n[ {0.BLUE}i{0.STOP} ] {1} {0.GRAY}scraped proxys.{0.STOP}\n'.format(color, scrape()))
+    print('')
     while count > 0:
         if boost:
             code = gen_code(24)
