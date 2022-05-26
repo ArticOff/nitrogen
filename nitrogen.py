@@ -53,17 +53,14 @@ async def main():
     boost = True if str(ask('Boost codes or Classic codes (boost/classic)')).lower() == 'boost' else False
     if str(ask('Enable Checker (yes/no)')).lower() == 'yes':
         try:
-            checker = True
-            invalid = 0
-            valid = []
+            valid, invalid, checker = [], 0, True
             print('\n[ {0.BLUE}i{0.STOP} ] {1} {0.GRAY}scraped proxys.{0.STOP}'.format(color, scrape()))
         except:
             print('\n[ {0.RED}>{0.STOP} ] {0.GRAY}Check your internet connection !{0.STOP}\n'.format(color))
             os.system('pause')
             return exit()
     else:
-        checker = False
-        valid = invalid = 'CHECKER NOT ENABLED'
+        valid = invalid, checker = 'CHECKER NOT ENABLED', False
     print('')
     while count > 0:
         if boost:
