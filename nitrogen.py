@@ -1,29 +1,4 @@
-"""
-The MIT License (MIT)
-
-Copyright (c) 2022-today Artic
-
-Permission is hereby granted, free of charge, to any person obtaining a
-copy of this software and associated documentation files (the "Software"),
-to deal in the Software without restriction, including without limitation
-the rights to use, copy, modify, merge, publish, distribute, sublicense,
-and/or sell copies of the Software, and to permit persons to whom the
-Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-DEALINGS IN THE SOFTWARE.
-"""
-
 import random, string, os, aiohttp, asyncio, requests
-
 
 class color:
     VIOLET = '\033[95m'
@@ -82,8 +57,7 @@ def ask(question: str):
 rproxy = readproxies()
 
 async def main():
-    checker = False
-    boost = False
+    checker =  boost = False
     os.system('cls')
     print('[ {0.YELLOW}>{0.STOP} ] {0.GREEN}{0.BOLD}DISCORD NITRO GENERATOR{0.STOP}'.format(color))
     print('[ {0.YELLOW}>{0.STOP} ] {0.GRAY}Made with {0.RED}<3{0.STOP} {0.GRAY}by{0.STOP} Artic ({0.DARK_CYAN}{0.UNDERLINED}https://github.com/ArticOff{0.STOP})\n'.format(color))
@@ -94,8 +68,10 @@ async def main():
         return exit()
     if str(ask('Enable Checker (yes/no)')).lower() == 'yes':
         checker = True
+        valid = invalid = 0
     else:
         checker = False
+        valid =  invalid = 'CHECKER NOT ENABLED'
     if str(ask('Boost codes or Classic codes (boost/classic)')).lower() == 'boost':
         boost = True
     else:
@@ -111,7 +87,7 @@ async def main():
             count -= 1
             badge = '#'
             async with aiohttp.ClientSession() as session:
-                async with session.get('https://discord.com/api/v10/entitlements/gift-codes/{}'.format(code)) as response:
+                async with session.get('https://discordapp.com/api/v9/entitlements/gift-codes/{}?with_application=false&with_subscription_plan=true'.format(code)) as response:
                     if response.status == 429:
                         try:
                             proxi = random.choice(rproxy)
@@ -120,16 +96,21 @@ async def main():
                         except IndexError:
                             print('\n[ {0.RED}>{0.STOP} ] There are no more proxies available !\n'.format(color))
                             return exit()
-                        badge = '{}{}{}'.format(color.RED, '-', color.STOP)
+                        invalid += 1
+                        badge = '{0.RED}-{0.STOP}'.format(color)
                     elif response.status == 404:
-                        badge = '{}{}{}'.format(color.RED, '-', color.STOP)
+                        invalid += 1
+                        badge = '{0.RED}-{0.STOP}'.format(color)
                     elif response.status == 200:
-                        badge = '{}{}{}'.format(color.GREEN, '+', color.STOP)
-                    print('[ {} ] {}{}https://discord.gift/{}{}'.format(badge, color.DARK_CYAN, color.UNDERLINED, code, color.STOP))
+                        valid += 1
+                        badge = '{0.GREEN}+{0.STOP}'.format(color)
+                    print('[ {1} ] {0.DARK_CYAN}{0.UNDERLINED}https://discord.gift/{2}{0.STOP}'.format(color, badge, code))
         else:
             count -= 1
             print('[ {0.BLUE}~{0.STOP} ] {0.DARK_CYAN}{0.UNDERLINED}https://discord.gift/{1}{0.STOP}'.format(color, code))
+    return [invalid, valid]
 
 if __name__ == '__main__':
-    asyncio.get_event_loop().run_until_complete(main())
-    print('\n[ {0.MAGENTA}*{0.STOP} ] Thanks for using our nitro generator !\n'.format(color))
+    gen = asyncio.get_event_loop().run_until_complete(main())
+    print('\n[ {0.YELLOW}>{0.STOP} ] Result:\n{0.RED}Invalid{0.STOP}: {1[0]}\n{0.GREEN}Valid{0.STOP}: {1[1]}'.format(color, gen))
+    print('\n[ {0.MAGENTA}*{0.STOP} ] {0.GRAY}Thanks for using our nitro generator !{0.STOP}\n'.format(color))
