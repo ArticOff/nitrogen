@@ -60,7 +60,8 @@ async def main():
             os.system('pause')
             return exit()
     else:
-        valid = invalid, checker = 'CHECKER NOT ENABLED', False
+        valid = invalid = 'CHECKER NOT ENABLED'
+        checker = False
     print('')
     while count > 0:
         if boost:
