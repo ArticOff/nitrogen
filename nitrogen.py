@@ -131,6 +131,5 @@ async def main():
             print('[ {0.BLUE}~{0.STOP} ] {0.DARK_CYAN}{0.UNDERLINED}https://discord.gift/{1}{0.STOP}'.format(color, code))
 
 if __name__ == '__main__':
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(main())
+    asyncio.get_event_loop().run_until_complete(main())
     print('\n[ {0.MAGENTA}*{0.STOP} ] Thanks for using our nitro generator !\n'.format(color))
