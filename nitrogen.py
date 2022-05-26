@@ -78,7 +78,9 @@ async def main():
                             index = rproxy.index(proxi)
                             del rproxy[index]
                         except IndexError:
-                            print('\n[ {0.RED}>{0.STOP} ] There are no more proxies available !\n'.format(color))
+                            print('\n[ {0.RED}>{0.STOP} ] {0.GRAY}There are no more proxies available !{0.STOP}\n'.format(color))
+                            print('[ {0.YELLOW}>{0.STOP} ] Result:\n{0.RED}Invalid{0.STOP}: {1}\n{0.GREEN}Valid{0.STOP}: {2}\n'.format(color, invalid, valid))
+                            os.system('pause')
                             return exit()
                         invalid += 1
                         badge = '{0.RED}-{0.STOP}'.format(color)
