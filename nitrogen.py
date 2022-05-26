@@ -1,29 +1,14 @@
 import random, string, os, aiohttp, asyncio, requests
 
 class color:
-    VIOLET = '\033[95m'
-    CYAN = '\033[96m'
-    DARK_CYAN = '\033[36m'
-    BLUE = '\033[94m'
-    GREEN = '\033[92m'
-    YELLOW = '\033[93m'
-    RED = '\033[91m'
-    WHITE = '\033[37m'
-    BLACK = '\033[30m'
-    GRAY = '\033[38;2;88;88;88m'
-    MAGENTA = '\033[35m'
-    BOLD = '\033[1m'
-    DIM = '\033[2m'
-    NORMAL = '\033[22m'
-    UNDERLINED = '\033[4m'
-    STOP = '\033[0m'
+    VIOLET, CYAN, DARK_CYAN, BLUE, GREEN, YELLOW, RED, WHITE, BLACK, GRAY, MAGENTA, BOLD, DIM, NORMAL, UNDERLINED, STOP = '\033[95m', '\033[96m', '\033[36m', '\033[94m', '\033[92m', '\033[93m', '\033[91m', '\033[37m', '\033[30m','\033[38;2;88;88;88m', '\033[35m', '\033[1m', '\033[2m', '\033[22m', '\033[4m', '\033[0m'
 
 def gen_code(lenght: int):
     return ''.join(random.choice(string.ascii_letters + string.digits) for i in range(lenght))
 
 def scrape():
     scraped = 0
-    f = open("proxies.txt", "a+")
+    f = open('proxies.txt', 'a+')
     f.truncate(0)
     r = requests.get('https://api.proxyscrape.com/?request=displayproxies')
     proxies = []
@@ -34,18 +19,18 @@ def scrape():
             proxies.append(proxy)
     for p in proxies:
         scraped = scraped + 1 
-        f.write("{}\n".format(p))
+        f.write('{}\n'.format(p))
     f.close()
 
 def readproxies():
     try:
-        p = open("proxies.txt", encoding="UTF-8")
+        p = open('proxies.txt', encoding='UTF-8')
     except FileNotFoundError:
-        p = open("proxies.txt", "w+", encoding="UTF-8")
+        p = open('proxies.txt', 'w+', encoding='UTF-8')
         raise SystemExit
     rproxy = p.read().split('\n')
     for i in rproxy:
-        if i == "" or i == " ":
+        if i == '' or i == ' ':
             index = rproxy.index(i)
             del rproxy[index]
     p.close()
@@ -64,7 +49,7 @@ async def main():
     try:
         count = int(ask('How much codes will be generated'))
     except ValueError:
-        print('\n[ {0.RED}>{0.STOP} ] Please enter an integer !\n'.format(color))
+        print('\n[ {0.RED}>{0.STOP} ] {0.GRAY}Please enter an integer{0.STOP} !\n'.format(color))
         return exit()
     if str(ask('Enable Checker (yes/no)')).lower() == 'yes':
         checker = True
