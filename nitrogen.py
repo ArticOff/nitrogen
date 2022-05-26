@@ -16,7 +16,7 @@ def scrape():
             proxy = 'https://{}'.format(proxy)
             proxies.append(proxy)
     for p in proxies:
-        scraped += 1 
+        scraped += 1
         f.write('{}\n'.format(p))
     f.close()
     return scraped
@@ -41,7 +41,7 @@ def ask(question: str):
 rproxy = readproxies()
 
 async def main():
-    checker =  boost = False
+    checker = boost = False
     os.system('cls')
     print('[ {0.YELLOW}>{0.STOP} ] {0.GREEN}{0.BOLD}DISCORD NITRO GENERATOR{0.STOP}'.format(color))
     print('[ {0.YELLOW}>{0.STOP} ] {0.GRAY}Made with {0.RED}<3{0.STOP} {0.GRAY}by{0.STOP} Artic ({0.DARK_CYAN}{0.UNDERLINED}https://github.com/ArticOff{0.STOP})\n'.format(color))
@@ -54,7 +54,8 @@ async def main():
     if str(ask('Enable Checker (yes/no)')).lower() == 'yes':
         try:
             checker = True
-            valid = invalid = 0
+            invalid = 0
+            valid = []
             print('\n[ {0.BLUE}i{0.STOP} ] {1} {0.GRAY}scraped proxys.{0.STOP}'.format(color, scrape()))
         except:
             print('\n[ {0.RED}>{0.STOP} ] {0.GRAY}Check your internet connection !{0.STOP}\n'.format(color))
@@ -90,7 +91,7 @@ async def main():
                         invalid += 1
                         badge = '{0.RED}-{0.STOP}'.format(color)
                     elif response.status == 200:
-                        valid += 1
+                        valid.append(response.url())
                         badge = '{0.GREEN}+{0.STOP}'.format(color)
                     print('[ {1} ] {0.DARK_CYAN}{0.UNDERLINED}https://discord.gift/{2}{0.STOP}'.format(color, badge, code))
         else:
@@ -100,6 +101,6 @@ async def main():
 
 if __name__ == '__main__':
     gen = asyncio.get_event_loop().run_until_complete(main())
-    print('\n[ {0.YELLOW}>{0.STOP} ] Result:\n{0.RED}Invalid{0.STOP}: {1[0]}\n{0.GREEN}Valid{0.STOP}: {1[1]}'.format(color, gen))
+    print('\n[ {0.YELLOW}>{0.STOP} ] Result:\n{0.RED}Invalid{0.STOP}: {1[0]}\n{0.GREEN}Valid{0.STOP}: {2}\n{0.GREEN}Links{0.STOP}: {3}'.format(color, gen, len(gen[1]), ', '.join(gen[1])))
     print('\n[ {0.MAGENTA}*{0.STOP} ] {0.GRAY}Thanks for using our nitro generator !{0.STOP}\n'.format(color))
     os.system('pause')
