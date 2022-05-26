@@ -12,8 +12,7 @@ def scrape():
     r, proxies = requests.get('https://api.proxyscrape.com/?request=displayproxies'), []
     for proxy in r.text.split('\n'):
         if proxy:
-            proxy = proxy.strip()
-            proxy = 'https://{}'.format(proxy)
+            proxy = 'https://{}'.format(proxy).strip()
             proxies.append(proxy)
     for p in proxies:
         scraped += 1
