@@ -7,20 +7,19 @@ def gen_code(lenght: int):
     return ''.join(random.choice(string.ascii_letters + string.digits) for i in range(lenght))
 
 def scrape():
-    scraped = 0
-    f = open('proxies.txt', 'a+')
+    f, scraped = open('proxies.txt', 'a+'), 0
     f.truncate(0)
-    r = requests.get('https://api.proxyscrape.com/?request=displayproxies')
-    proxies = []
+    r, proxies = requests.get('https://api.proxyscrape.com/?request=displayproxies'), []
     for proxy in r.text.split('\n'):
         proxy = proxy.strip()
         proxy = 'https://{}'.format(proxy)
         if proxy:
             proxies.append(proxy)
     for p in proxies:
-        scraped = scraped + 1 
+        scraped += 1 
         f.write('{}\n'.format(p))
     f.close()
+    return scraped
 
 def readproxies():
     try:
@@ -51,18 +50,17 @@ async def main():
     except ValueError:
         print('\n[ {0.RED}>{0.STOP} ] {0.GRAY}Please enter an integer{0.STOP} !\n'.format(color))
         return exit()
+    if str(ask('Boost codes or Classic codes (boost/classic)')).lower() == 'boost':
+        boost = True
+    else:
+        boost = False
     if str(ask('Enable Checker (yes/no)')).lower() == 'yes':
         checker = True
         valid = invalid = 0
     else:
         checker = False
         valid =  invalid = 'CHECKER NOT ENABLED'
-    if str(ask('Boost codes or Classic codes (boost/classic)')).lower() == 'boost':
-        boost = True
-    else:
-        boost = False
-    print('')
-    scrape()
+    print('\n[ {0.BLUE}i{0.STOP} ] {1} {0.GRAY}scraped proxys.{0.STOP}\n'.format(color, scrape()))
     while count > 0:
         if boost:
             code = gen_code(24)
@@ -99,3 +97,4 @@ if __name__ == '__main__':
     gen = asyncio.get_event_loop().run_until_complete(main())
     print('\n[ {0.YELLOW}>{0.STOP} ] Result:\n{0.RED}Invalid{0.STOP}: {1[0]}\n{0.GREEN}Valid{0.STOP}: {1[1]}'.format(color, gen))
     print('\n[ {0.MAGENTA}*{0.STOP} ] {0.GRAY}Thanks for using our nitro generator !{0.STOP}\n'.format(color))
+    os.system('pause')
