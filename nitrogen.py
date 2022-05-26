@@ -24,6 +24,7 @@ DEALINGS IN THE SOFTWARE.
 
 import random, string, os, aiohttp, asyncio, requests
 
+
 class color:
     VIOLET = '\033[95m'
     CYAN = '\033[96m'
