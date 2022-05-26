@@ -79,7 +79,7 @@ async def main():
                             del rproxy[index]
                         except IndexError:
                             print('\n[ {0.RED}>{0.STOP} ] {0.GRAY}There are no more proxies available !{0.STOP}\n'.format(color))
-                            print('[ {0.YELLOW}>{0.STOP} ] Result:\n{0.RED}Invalid{0.STOP}: {1}\n{0.GREEN}Valid{0.STOP}: {2}\n{0.GREEN}Links{0.STOP}: {3}'.format(color, invalid, len(valid), ', '.join(valid)))
+                            print('[ {0.YELLOW}>{0.STOP} ] Result:\n{0.RED}Invalid{0.STOP}: {1}\n{0.GREEN}Valid{0.STOP}: {2}\n{0.GREEN}Links{0.STOP}: {3}\n'.format(color, invalid, len(valid), ', '.join(valid)))
                             os.system('pause')
                             return exit()
                         invalid += 1
