@@ -35,7 +35,7 @@ def readproxies():
     return rproxy
 
 def ask(question: str):
-    return input('[ {0.MAGENTA}?{0.STOP} ] {0.GRAY}{1}:{0.STOP} '.format(color, question))
+    return str(input('[ {0.MAGENTA}?{0.STOP} ] {0.GRAY}{1}:{0.STOP} '.format(color, question)))
 
 rproxy = readproxies()
 
@@ -49,8 +49,8 @@ async def main():
     except ValueError:
         print('\n[ {0.RED}>{0.STOP} ] {0.GRAY}Please enter an integer{0.STOP} !\n'.format(color))
         return exit()
-    boost = True if str(ask('Boost codes or Classic codes (boost/classic)')).lower() == 'boost' else False
-    if str(ask('Enable Checker (yes/no)')).lower() == 'yes':
+    boost = True if ask('Boost codes or Classic codes (boost/classic)').lower() == 'boost' else False
+    if ask('Enable Checker (yes/no)').lower() == 'yes':
         try:
             valid, invalid, checker = [], 0, True
             print('\n[ {0.BLUE}i{0.STOP} ] {1} {0.GRAY}scraped proxys.{0.STOP}'.format(color, scrape()))
