@@ -20,8 +20,7 @@ The project is under development
 2. [Download all files](https://github.com/ArticOff/nitrogen/archive/refs/heads/main.zip) (except the liscence and the Readme file)
 3. Put them in a common folder
 4. Run the `setup.bat` file
-5. Run the `start.bat` file
-6. You're done !
+5. You're done !
 
 ***
 
