@@ -12,6 +12,17 @@ The project is under development
 ### Codes...
 ![image](https://user-images.githubusercontent.com/81034458/170535891-8450a837-f231-4e9d-b40e-b9b9b3675b9f.png)
 
+
+
+## How to install it ?
+
+1. [Download Python](https://www.python.org/downloads/) (I recommend a recent version of Python)
+2. [Download all files](https://github.com/ArticOff/nitrogen/archive/refs/heads/main.zip) (except the liscence and the Readme file)
+3. Put them in a common folder
+4. Run the `setup.bat` file
+5. Run the `start.bat` file
+6. You're done !
+
 ***
 
 That's all !
