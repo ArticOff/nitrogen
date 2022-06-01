@@ -1,1 +1,2 @@
-python "NitroGen Free.py"
+@echo off
+python NitroGenFree.py
