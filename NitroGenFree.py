@@ -41,7 +41,7 @@ rproxy = readproxies()
 
 async def main():
     checker = boost = False
-    os.system('cls')
+    os.system('cls' if os.name == 'nt' else 'clear')
     print('[ {0.YELLOW}>{0.STOP} ] {0.GREEN}{0.BOLD}DISCORD NITRO GENERATOR {0.BLUE}FREE{0.STOP}'.format(color))
     print('[ {0.YELLOW}>{0.STOP} ] {0.GRAY}Made with {0.RED}<3{0.STOP} {0.GRAY}by{0.STOP} Artic ({0.DARK_CYAN}{0.UNDERLINED}https://github.com/ArticOff{0.STOP})\n'.format(color))
     try:
@@ -56,7 +56,7 @@ async def main():
             print('\n[ {0.BLUE}i{0.STOP} ] {1} {0.GRAY}scraped proxys.{0.STOP}'.format(color, scrape()))
         except:
             print('\n[ {0.RED}>{0.STOP} ] {0.GRAY}Check your internet connection !{0.STOP}\n'.format(color))
-            os.system('pause')
+            input('Press enter to continue... ')
             return exit()
     else:
         valid = invalid = 'CHECKER NOT ENABLED'
@@ -80,7 +80,7 @@ async def main():
                         except IndexError:
                             print('\n[ {0.RED}>{0.STOP} ] {0.GRAY}There are no more proxies available !{0.STOP}\n'.format(color))
                             print('[ {0.YELLOW}>{0.STOP} ] Result:\n{0.RED}Invalid{0.STOP}: {1}\n{0.GREEN}Valid{0.STOP}: {2}\n{0.GREEN}Links{0.STOP}: {3}\n'.format(color, invalid, len(valid), ', '.join(valid)))
-                            os.system('pause')
+                            input('Press enter to continue... ')
                             return exit()
                         invalid += 1
                         badge = '{0.RED}-{0.STOP}'.format(color)
@@ -100,4 +100,5 @@ if __name__ == '__main__':
     gen = asyncio.get_event_loop().run_until_complete(main())
     print('\n[ {0.YELLOW}>{0.STOP} ] Result:\n{0.RED}Invalid{0.STOP}: {1[0]}\n{0.GREEN}Valid{0.STOP}: {2}\n{0.GREEN}Links{0.STOP}: {3}'.format(color, gen, gen[1], gen[1])) if gen[1] == 'CHECKER NOT ENABLED' else print('\n[ {0.YELLOW}>{0.STOP} ] Result:\n{0.RED}Invalid{0.STOP}: {1[0]}\n{0.GREEN}Valid{0.STOP}: {2}\n{0.GREEN}Links{0.STOP}: {3}'.format(color, gen, len(gen[1]), ', '.join(gen[1])))
     print('\n[ {0.MAGENTA}*{0.STOP} ] {0.GRAY}Thanks for using our nitro generator !{0.STOP}\n'.format(color))
-    os.system('pause')
+    input('Press enter to continue... ')
+    exit()
