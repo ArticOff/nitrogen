@@ -4,6 +4,8 @@
 
 The project is under development
 
+# NitroGenFree
+
 ## Quick Example
 
 ### Options...
@@ -12,8 +14,6 @@ The project is under development
 ### Codes...
 ![image](https://user-images.githubusercontent.com/81034458/171924088-b014b905-84d3-4700-aea4-a466b1d5da5d.png)
 
-
-
 ## How to install it ?
 
 1. [Download Python](https://www.python.org/downloads/) (I recommend a recent version of Python)
@@ -21,6 +21,32 @@ The project is under development
 3. Put them in a common folder
 4. Run the `setup.bat` file
 5. You're done !
+
+# NitroGenPremium
+
+this program is an improved and optimized version with even more features
+
+- :stopwatch: Time to generate the codes
+- :mega: A webhook notification system
+- :calling: A mention system on Discord
+- :runner: Faster than the free version
+- :books: Anecdotes about the program
+- :hammer: A version that is self-regulating at the CPU level.
+- :computer: Can be run on a server
+
+## Preview
+
+### Options...
+![image](https://user-images.githubusercontent.com/81034458/171924552-fdfc33f4-824a-49f1-b7c8-8ce07c3f7a96.png)
+
+### Codes...
+![image](https://user-images.githubusercontent.com/81034458/171924691-679def14-28f0-4799-ae89-d78569bb2679.png)
+
+## How to install it ?
+
+1. [Download Python](https://www.python.org/downloads/) (I recommend a recent version of Python)
+2. Send me a message on my [Discord account](https://discord.com/users/855783629047988274)
+3. The rest is in DM
 
 ***
 
