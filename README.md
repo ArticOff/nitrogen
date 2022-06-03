@@ -42,6 +42,9 @@ this program is an improved and optimized version with even more features
 ### Codes...
 ![image](https://user-images.githubusercontent.com/81034458/171924691-679def14-28f0-4799-ae89-d78569bb2679.png)
 
+### On Discord...
+![image](https://user-images.githubusercontent.com/81034458/171930283-2339aeb2-b2ee-4634-9e43-9c861ef96285.png)
+
 ## How to install it ?
 
 1. [Download Python](https://www.python.org/downloads/) (I recommend a recent version of Python)
