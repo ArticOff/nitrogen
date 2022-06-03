@@ -7,10 +7,10 @@ The project is under development
 ## Quick Example
 
 ### Options...
-![image](https://user-images.githubusercontent.com/81034458/170535993-df80319d-2089-4915-a7a4-95cc0542cd4e.png)
+![image](https://user-images.githubusercontent.com/81034458/171924149-b662bf6d-5b6f-41f8-b21f-e4f722e753a6.png)
 
 ### Codes...
-![image](https://user-images.githubusercontent.com/81034458/170535891-8450a837-f231-4e9d-b40e-b9b9b3675b9f.png)
+![image](https://user-images.githubusercontent.com/81034458/171924088-b014b905-84d3-4700-aea4-a466b1d5da5d.png)
 
 
 
