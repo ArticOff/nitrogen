@@ -1,2 +1,4 @@
 @echo off
-python NitroGenFree.py
+cls
+title NitroGenFree
+python "NitroGenFree.py"
