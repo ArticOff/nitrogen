@@ -41,7 +41,7 @@ this program is an improved and optimized version with even more features
 ![image](https://user-images.githubusercontent.com/81034458/171924552-fdfc33f4-824a-49f1-b7c8-8ce07c3f7a96.png)
 
 ### Codes...
-![image](https://user-images.githubusercontent.com/81034458/171924691-679def14-28f0-4799-ae89-d78569bb2679.png)
+![image](https://user-images.githubusercontent.com/81034458/172023965-86b6e7ec-fc2a-4239-969a-7dd5a79b5138.png)
 
 ### On Discord...
 ![image](https://user-images.githubusercontent.com/81034458/171930283-2339aeb2-b2ee-4634-9e43-9c861ef96285.png)
