@@ -32,7 +32,7 @@ this program is an improved and optimized version with even more features
 - :runner: Faster than the free version
 - :books: Anecdotes about the program
 - :bar_chart: Some statistics
-- :hammer: A version that is self-regulating at the CPU level.
+- :hammer: A version that is self-regulating at the CPU level
 - :computer: Can be run on a server
 
 ## Preview
