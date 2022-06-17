@@ -34,6 +34,7 @@ this program is an improved and optimized version with even more features
 - :bar_chart: Some statistics
 - :hammer: A version that is self-regulating at the CPU level
 - :computer: Can be run on a server
+- :four: 4x more powerful
 
 ## Preview
 
