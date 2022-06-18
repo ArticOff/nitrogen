@@ -17,10 +17,11 @@ The project is under development
 ## How to install it ?
 
 1. [Download Python](https://www.python.org/downloads/) (I recommend a recent version of Python)
-2. [Download all files](https://github.com/ArticOff/nitrogen/archive/refs/heads/main.zip)
-3. Put them in a common folder
-4. Run the `setup.bat` file
-5. You're done !
+2. Download [Requests](https://pypi.org/project/requests/) and [Aiohttp](https://pypi.org/project/aiohttp/)
+3. [Download all files](https://github.com/ArticOff/nitrogen/archive/refs/heads/main.zip)
+4. Put them in a common folder
+5. Run the `setup.bat` file
+6. You're done !
 
 # NitroGenPremium
 
