@@ -58,6 +58,20 @@ this program is an improved and optimized version with even more features
 
 ***
 
+Tests performed with the following options:
+1. **Type**: boost
+2. **Checker**: disabled
+
+|  Codes   | NitroGenFree  | NitroGenPremium | [Other NitroGen](https://github.com/lnxcz/nitro-generator) |
+| -------- | ------------- | --------------- | -------------- |
+| 1        | 0.001s        | 0.0003s         | 0.005s         |
+| 500      | 0.56s         | 0.08s           | 2.59s          |
+| 100k     | 5.67s         | 1.58s           | 49.97s         |
+| 1m       | 6:55s         | 2:28s           | 7:09s          |
+| 1Mrd     | ~5d           | ~41h            | ~5d            |
+
+***
+
 That's all !
 
 ***
