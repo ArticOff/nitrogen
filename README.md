@@ -62,7 +62,7 @@ Tests performed with the following options:
 1. **Type**: boost
 2. **Checker**: disabled
 
-|  Codes   | NitroGenFree  | NitroGenPremium | [Other NitroGen](https://github.com/lnxcz/nitro-generator) |
+|  Codes   | [NitroGenFree](https://github.com/ArticOff/nitrogen/#nitrogenfree)  | NitroGenPremium | [Other NitroGen](https://github.com/lnxcz/nitro-generator) |
 | -------- | ------------- | --------------- | -------------- |
 | 1        | 0.001s        | 0.0003s         | 0.005s         |
 | 500      | 0.56s         | 0.08s           | 2.59s          |
