@@ -61,6 +61,7 @@ this program is an improved and optimized version with even more features
 Tests performed with the following options:
 1. **Type**: boost
 2. **Checker**: disabled
+3. **Real-time info**: disabled
 
 |  Codes   | [NitroGenFree](https://github.com/ArticOff/nitrogen/#nitrogenfree)  | [NitroGenPremium](https://github.com/ArticOff/nitrogen/blob/main/README.md#nitrogenpremium) | [Other NitroGen](https://github.com/lnxcz/nitro-generator) |
 | -------- | ------------- | --------------- | -------------- |
