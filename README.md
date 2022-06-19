@@ -19,8 +19,8 @@ The project is under development
 ## How to install it ?
 
 1. [Download Python](https://www.python.org/downloads/) (I recommend a recent version of Python)
-2. Open a terminal and type: `pip install -r requirements.txt`
-3. [Download all files](https://github.com/ArticOff/nitrogen/archive/refs/heads/main.zip)
+2. [Download all files](https://github.com/ArticOff/nitrogen/archive/refs/heads/main.zip)
+3. Open a terminal and type: `pip install -r requirements.txt`
 4. Put them in a common folder
 5. Run the `setup.bat` file
 6. You're done !
