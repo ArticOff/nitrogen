@@ -65,7 +65,7 @@ Tests performed with the following options:
 2. **Checker**: disabled
 3. **Real-time info**: disabled
 
-|  Codes   | [NitroGenFree](https://github.com/ArticOff/nitrogen/#nitrogenfree)  | [NitroGenPremium](https://github.com/ArticOff/nitrogen/blob/main/README.md#nitrogenpremium) | [Other NitroGen](https://github.com/lnxcz/nitro-generator) |
+|  Codes   | [NitroGenFree](https://github.com/ArticOff/nitrogen/#nitrogenfree)  | [NitroGenPremium](https://github.com/ArticOff/nitrogen#nitrogenpremium) | [Other NitroGen](https://github.com/lnxcz/nitro-generator) |
 | -------- | ------------- | --------------- | -------------- |
 | 1        | 0.001s        | 0.0003s         | 0.005s         |
 | 500      | 0.56s         | 0.08s           | 2.59s          |
