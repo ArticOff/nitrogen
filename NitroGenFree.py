@@ -88,7 +88,7 @@ async def main():
                         invalid += 1
                         badge = '{0.RED}-{0.STOP}'.format(color)
                     elif response.status == 200:
-                        valid.append(response.url())
+                        valid.append('https://discord.gift/{}'.format(code))
                         badge = '{0.GREEN}+{0.STOP}'.format(color)
                     print('[ {1} ] {0.DARK_CYAN}{0.UNDERLINED}https://discord.gift/{2}{0.STOP}'.format(color, badge, code))
         else:
