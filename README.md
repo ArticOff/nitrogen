@@ -1,10 +1,10 @@
 # nitrogen
 
-### A simple nitro generator.
+### A simple nitro generator
 
-The generator can be used in versions later than 2.6.
+The generator can be used in versions later than 2.6
 
-The project is under development.
+The project is under development
 
 # NitroGenFree
 
