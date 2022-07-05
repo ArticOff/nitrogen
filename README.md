@@ -34,6 +34,7 @@ this program is an improved and optimized version with even more features
 - 📲: A mention system on Discord
 - 🏃: Faster than the free version
 - 3️⃣: 3x more powerful
+- 🏎️: Performance mode
 - :outbox_tray: Real-time information
 - 📚: Anecdotes about the program
 - 📊: Some statistics
@@ -64,14 +65,15 @@ Tests performed with the following options:
 1. **Type**: boost
 2. **Checker**: disabled
 3. **Real-time info**: disabled
+4. `*` **Performance mode** : enabled
 
 |  Codes   | [NitroGenFree](https://github.com/ArticOff/nitrogen/#nitrogenfree)  | [NitroGenPremium](https://github.com/ArticOff/nitrogen#nitrogenpremium) | [Other NitroGen](https://github.com/lnxcz/nitro-generator) |
 | -------- | ------------- | --------------- | -------------- |
-| 1        | 0.001s        | 0.0003s         | 0.005s         |
-| 500      | 0.56s         | 0.08s           | 2.59s          |
-| 100k     | 47.67s        | 14.88s          | 49.97s         |
-| 1m       | 6:55s         | 2:28s           | 7:09s          |
-| 1Mrd     | ~5d           | ~41h            | ~5d            |
+| 1        | 0.001s        | 0.0003s (*~0.4ms)| 0.005s         |
+| 500      | 0.56s         | 0.08s (*0.008s) | 2.59s          |
+| 100k     | 47.67s        | 14.88s (*1.4s)  | 49.97s         |
+| 1m       | 6:55s         | 2:28s (*14s)    | 7:09s          |
+| 1Mrd     | ~5d           | ~41h (*~4h)           | ~5d            |
 
 ***
 
