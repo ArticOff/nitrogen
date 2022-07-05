@@ -68,12 +68,12 @@ Tests performed with the following options:
 4. `*` **Performance mode** : enabled
 
 |  Codes   | [NitroGenFree](https://github.com/ArticOff/nitrogen/#nitrogenfree)  | [NitroGenPremium](https://github.com/ArticOff/nitrogen#nitrogenpremium) | [Other NitroGen](https://github.com/lnxcz/nitro-generator) |
-| -------- | ------------- | --------------- | -------------- |
-| 1        | 0.001s        | 0.0003s (*~0.4ms)| 0.005s         |
-| 500      | 0.56s         | 0.08s (*0.008s) | 2.59s          |
-| 100k     | 47.67s        | 14.88s (*1.4s)  | 49.97s         |
-| 1m       | 6:55s         | 2:28s (*14s)    | 7:09s          |
-| 1Mrd     | ~5d           | ~41h (*~4h)           | ~5d            |
+| -------- | ------------- | ------------------- | -------------- |
+| 1        | 0.001s        | 0.0003s (`*`~0.4ms) | 0.005s         |
+| 500      | 0.56s         | 0.08s (`*`0.008s)   | 2.59s          |
+| 100k     | 47.67s        | 14.88s (`*`1.4s)    | 49.97s         |
+| 1m       | 6:55s         | 2:28s (`*`14s)      | 7:09s          |
+| 1Mrd     | ~5d           | ~41h (`*`~4h)       | ~5d            |
 
 ***
 
