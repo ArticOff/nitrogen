@@ -29,17 +29,17 @@ The project is under development
 
 this program is an improved and optimized version with even more features
 
-- ⏱️: Time to generate the codes
-- 📣: A webhook notification system
-- 📲: A mention system on Discord
-- 🏃: Faster than the free version
-- 3️⃣: 3x more powerful
-- 🏎️: Performance mode
+- ⏱️ Time to generate the codes
+- 📣 A webhook notification system
+- 📲 A mention system on Discord
+- 🏃 Faster than the free version
+- 3️⃣ 3x more powerful
+- 🏎️ Performance mode
 - :outbox_tray: Real-time information
-- 📚: Anecdotes about the program
-- 📊: Some statistics
-- 🔨: A version that is self-regulating at the CPU level
-- 💻: Can be run on a server
+- 📚 Anecdotes about the program
+- 📊 Some statistics
+- 🔨 A version that is self-regulating at the CPU level
+- 💻 Can be run on a server
 
 
 ## Preview
