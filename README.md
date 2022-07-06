@@ -75,6 +75,16 @@ Tests performed with the following options:
 | 1m       | 6:55s         | 2:28s (`*` 14s)      | 7:09s          |
 | 1Mrd     | ~5d           | ~41h (`*` ~4h)       | ~5d            |
 
+## Disclaimer
+
+I am not responsible for your actions with this product.
+
+According to the [Discord TOS](https://discord.com/terms), it is strictly forbidden to harm or defraud the Discord services.
+
+In case of fraud, you may be permanently banned from Discord.
+
+This is only an educational program and not illegal.
+
 ***
 
 That's all !
