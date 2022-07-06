@@ -73,7 +73,7 @@ Tests performed with the following options:
 | 500      | 0.56s         | 0.08s (`*` 0.008s)   | 2.59s          |
 | 100k     | 47.67s        | 14.88s (`*` 1.4s)    | 49.97s         |
 | 1m       | 6:55s         | 2:28s (`*` 14s)      | 7:09s          |
-| 1Mrd     | ~5d           | ~41h (`*` ~4h)       | ~5d            |
+| 1b       | ~5d           | ~41h (`*` ~4h)       | ~5d            |
 
 ## Disclaimer
 
